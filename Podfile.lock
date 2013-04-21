@@ -1,0 +1,11 @@
+
+PODS:
+- PSAlertView (1.1)
+
+DEPENDENCIES:
+- PSAlertView (= 1.1)
+
+SPEC CHECKSUMS:
+  PSAlertView: bdccae3cbd14f6060772654ae641daec7415d9fa
+
+COCOAPODS: 0.16.3
