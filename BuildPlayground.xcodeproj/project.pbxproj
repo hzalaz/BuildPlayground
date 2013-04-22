@@ -418,10 +418,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33F634C8C53F4A8C9ACC8422 /* Pods.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hernan Zalazar (D7775NFXZA)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildPlayground/BuildPlayground-Prefix.pch";
 				INFOPLIST_FILE = "BuildPlayground/BuildPlayground-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AC176E9F-01B4-4610-95C4-FC550906FBB4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -502,10 +504,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33F634C8C53F4A8C9ACC8422 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zauber S.A. (EXT38NEES7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildPlayground/BuildPlayground-Prefix.pch";
 				INFOPLIST_FILE = "BuildPlayground/BuildPlayground-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A822C298-C37F-48DF-BE2B-EA88794B702F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Adhoc;
@@ -538,7 +542,7 @@
 				5FF5D5301724B0FB0084945A /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Adhoc;
 		};
 		5FD22944172306ED00859D50 /* Build configuration list for PBXNativeTarget "BuildPlayground" */ = {
 			isa = XCConfigurationList;
@@ -548,7 +552,7 @@
 				5FF5D5311724B0FB0084945A /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Adhoc;
 		};
 		5FD22947172306ED00859D50 /* Build configuration list for PBXNativeTarget "BuildPlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -558,7 +562,7 @@
 				5FF5D5321724B0FB0084945A /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Adhoc;
 		};
 /* End XCConfigurationList section */
 	};

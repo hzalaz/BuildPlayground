@@ -1,0 +1,6 @@
+group :adhoc do
+
+  use :BuildPlayground, :scheme => :BuildPlaygroundBuild
+  profile 'Provisioning/Wildcard_Adhoc.mobileprovision'
+
+end
