@@ -4,10 +4,32 @@ group :adhoc do
 
   profile 'Provisioning/Wildcard_Adhoc.mobileprovision'
 
-  build_number do
-    require 'plist'
-    bundle = Plist::parse_xml('BuildPlayground/BuildPlayground-Info.plist')
-    build_version = bundle['CFBundleVersion']
-    "dev#{build_version.gsub(/[^0-9]/, "").to_i + 1}"
+  build_number do |version|
+    "alpha#{version.gsub(/[^0-9]/, "").to_i}"
   end
+
+  after_deploy do |builder|
+    builder.config.info_plist do |info|
+      info.version = "dev#{info.version.gsub(/[^0-9]/, "").to_i + 1}"
+    end
+  end
+
+  deploy :testflight, 
+    :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
+    :team_token => '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1Ni4xMTgxNjM',
+    :notify => false,
+    :notes => 'NOTES'
+end
+
+group :development do
+
+  use :BuildPlayground, :scheme => :BuildPlaygroundBuild
+
+  profile 'Provisioning/Wildcard_Adhoc.mobileprovision'
+
+  deploy :testflight, 
+    :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
+    :team_token => '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1Ni4xMTgxNjM',
+    :notify => false,
+    :notes => 'NOTES'
 end
