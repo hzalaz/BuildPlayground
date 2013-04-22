@@ -1,6 +1,13 @@
 group :adhoc do
 
   use :BuildPlayground, :scheme => :BuildPlaygroundBuild
+
   profile 'Provisioning/Wildcard_Adhoc.mobileprovision'
 
+  build_number do
+    require 'plist'
+    bundle = Plist::parse_xml('BuildPlayground/BuildPlayground-Info.plist')
+    build_version = bundle['CFBundleVersion']
+    "dev#{build_version.gsub(/[^0-9]/, "").to_i + 1}"
+  end
 end
