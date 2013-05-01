@@ -17,8 +17,7 @@ group :adhoc do
   deploy :testflight, 
     :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
     :team_token => '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1Ni4xMTgxNjM',
-    :notify => false,
-    :notes => ""
+    :notify => false
 end
 
 group :development do
@@ -31,6 +30,6 @@ group :development do
     :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
     :team_token => '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1Ni4xMTgxNjM',
     :notify => false,
-    :notes => `git log --oneline --decorate HEAD~10..HEAD`,
+    :notes => `git log --oneline --decorate -n 10`,
     :replace => true
 end
