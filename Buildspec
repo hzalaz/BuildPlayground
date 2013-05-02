@@ -18,7 +18,7 @@ group :adhoc do
   end
 
   deploy :testflight, 
-    :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
+    :api_token => ENV['TESTFLIGHT_TOKEN'], 
     :team_token => team_token,
     :notify => false
 end
@@ -30,7 +30,7 @@ group :development do
   profile provisioning_path
 
   deploy :testflight, 
-    :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
+    :api_token => ENV['TESTFLIGHT_TOKEN'], 
     :team_token => team_token,
     :notify => false,
     :notes => `git log --oneline --decorate -n 10`,
