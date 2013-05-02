@@ -1,8 +1,11 @@
+provisioning_path = 'Provisioning/Wildcard_Adhoc.mobileprovision'
+team_token = '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1Ni4xMTgxNjM'
+
 group :adhoc do
 
   use :BuildPlayground, :scheme => :BuildPlaygroundBuild
 
-  profile 'Provisioning/Wildcard_Adhoc.mobileprovision'
+  profile provisioning_path
 
   build_number do |version|
     "alpha#{version.gsub(/[^0-9]/, "").to_i}"
@@ -16,7 +19,7 @@ group :adhoc do
 
   deploy :testflight, 
     :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
-    :team_token => '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1Ni4xMTgxNjM',
+    :team_token => team_token,
     :notify => false
 end
 
@@ -24,11 +27,11 @@ group :development do
 
   use :BuildPlayground, :scheme => :BuildPlaygroundBuild
 
-  profile 'Provisioning/Wildcard_Adhoc.mobileprovision'
+  profile provisioning_path
 
   deploy :testflight, 
     :api_token => 'a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU', 
-    :team_token => '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1Ni4xMTgxNjM',
+    :team_token => team_token,
     :notify => false,
     :notes => `git log --oneline --decorate -n 10`,
     :replace => true
