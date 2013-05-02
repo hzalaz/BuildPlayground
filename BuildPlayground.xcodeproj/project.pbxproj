@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B2C0848A7B94AC2B05D57A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA5C0A5F47D4B5FAD6FAA9C /* libPods.a */; };
+		44278F5700954B7EB3DA6CAF /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B43894E803874260B77C6D60 /* libPods-test.a */; };
+		5F60AA951731F8CD00C180AE /* ODViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F60AA941731F8CD00C180AE /* ODViewControllerSpec.m */; };
 		5FD2290D172306ED00859D50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD2290C172306ED00859D50 /* UIKit.framework */; };
 		5FD2290F172306ED00859D50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD2290E172306ED00859D50 /* Foundation.framework */; };
 		5FD22911172306ED00859D50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD22910172306ED00859D50 /* CoreGraphics.framework */; };
@@ -24,7 +26,6 @@
 		5FD22935172306ED00859D50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD2290C172306ED00859D50 /* UIKit.framework */; };
 		5FD22936172306ED00859D50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD2290E172306ED00859D50 /* Foundation.framework */; };
 		5FD2293E172306ED00859D50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FD2293C172306ED00859D50 /* InfoPlist.strings */; };
-		5FD22941172306ED00859D50 /* BuildPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD22940172306ED00859D50 /* BuildPlaygroundTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		33F634C8C53F4A8C9ACC8422 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		5AA5C0A5F47D4B5FAD6FAA9C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEFD8EFD8C74E25ABE3A6DB /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
+		5F60AA941731F8CD00C180AE /* ODViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODViewControllerSpec.m; sourceTree = "<group>"; };
 		5FD22909172306ED00859D50 /* BuildPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD2290C172306ED00859D50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FD2290E172306ED00859D50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,8 +64,7 @@
 		5FD22933172306ED00859D50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5FD2293B172306ED00859D50 /* BuildPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuildPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
 		5FD2293D172306ED00859D50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5FD2293F172306ED00859D50 /* BuildPlaygroundTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildPlaygroundTests.h; sourceTree = "<group>"; };
-		5FD22940172306ED00859D50 /* BuildPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuildPlaygroundTests.m; sourceTree = "<group>"; };
+		B43894E803874260B77C6D60 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				5FD22934172306ED00859D50 /* SenTestingKit.framework in Frameworks */,
 				5FD22935172306ED00859D50 /* UIKit.framework in Frameworks */,
 				5FD22936172306ED00859D50 /* Foundation.framework in Frameworks */,
+				44278F5700954B7EB3DA6CAF /* libPods-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +101,7 @@
 				5FD2290B172306ED00859D50 /* Frameworks */,
 				5FD2290A172306ED00859D50 /* Products */,
 				33F634C8C53F4A8C9ACC8422 /* Pods.xcconfig */,
+				5DEFD8EFD8C74E25ABE3A6DB /* Pods-test.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +122,7 @@
 				5FD22910172306ED00859D50 /* CoreGraphics.framework */,
 				5FD22933172306ED00859D50 /* SenTestingKit.framework */,
 				5AA5C0A5F47D4B5FAD6FAA9C /* libPods.a */,
+				B43894E803874260B77C6D60 /* libPods-test.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,9 +158,8 @@
 		5FD22939172306ED00859D50 /* BuildPlaygroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				5FD2293F172306ED00859D50 /* BuildPlaygroundTests.h */,
-				5FD22940172306ED00859D50 /* BuildPlaygroundTests.m */,
 				5FD2293A172306ED00859D50 /* Supporting Files */,
+				5F60AA941731F8CD00C180AE /* ODViewControllerSpec.m */,
 			);
 			path = BuildPlaygroundTests;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 				5FD2292E172306ED00859D50 /* Frameworks */,
 				5FD2292F172306ED00859D50 /* Resources */,
 				5FD22930172306ED00859D50 /* ShellScript */,
+				857477CCBE474159AD319CA9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,6 +294,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		857477CCBE474159AD319CA9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-test-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -306,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD22941172306ED00859D50 /* BuildPlaygroundTests.m in Sources */,
+				5F60AA951731F8CD00C180AE /* ODViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,12 +461,10 @@
 		};
 		5FD22948172306ED00859D50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEFD8EFD8C74E25ABE3A6DB /* Pods-test.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuildPlayground.app/BuildPlayground";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildPlayground/BuildPlayground-Prefix.pch";
 				INFOPLIST_FILE = "BuildPlaygroundTests/BuildPlaygroundTests-Info.plist";
@@ -459,12 +476,10 @@
 		};
 		5FD22949172306ED00859D50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEFD8EFD8C74E25ABE3A6DB /* Pods-test.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuildPlayground.app/BuildPlayground";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildPlayground/BuildPlayground-Prefix.pch";
 				INFOPLIST_FILE = "BuildPlaygroundTests/BuildPlaygroundTests-Info.plist";
@@ -516,12 +531,10 @@
 		};
 		5FF5D5321724B0FB0084945A /* Adhoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEFD8EFD8C74E25ABE3A6DB /* Pods-test.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BuildPlayground.app/BuildPlayground";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuildPlayground/BuildPlayground-Prefix.pch";
 				INFOPLIST_FILE = "BuildPlaygroundTests/BuildPlaygroundTests-Info.plist";
