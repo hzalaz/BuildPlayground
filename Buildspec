@@ -3,7 +3,7 @@ team_token = '5f9ce76652f7328c0f46b767bc86fa8a_MjE0MzQzMjAxMy0wNC0yMiAxNDoxMTo1N
 
 group :adhoc do
 
-  use :BuildPlayground, :scheme => :BuildPlaygroundBuild
+  use :BuildPlayground, :scheme => :BuildPlaygroundBuild, :test_scheme => :BuildPlaygroundTests
 
   profile provisioning_path
 
@@ -25,7 +25,7 @@ end
 
 group :development do
 
-  use :BuildPlayground, :scheme => :BuildPlaygroundBuild
+  use :BuildPlayground, :scheme => :BuildPlaygroundBuild, :test_scheme => :BuildPlaygroundTests
 
   profile provisioning_path
 

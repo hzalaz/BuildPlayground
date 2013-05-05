@@ -19,6 +19,11 @@ describe(NSStringFromClass([ODViewController class]), ^{
         it(@"should do something", ^{
             [[theValue(YES) should] beTrue];
         });
+        
+        it(@"should do something again", ^{
+            [[theValue(YES) should] beTrue];
+        });
+
     });
 });
 
